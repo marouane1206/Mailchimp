@@ -8,12 +8,13 @@ load_dotenv()  # Load variables from .env file (usually in the root directory)
 
 # Get the Mailchimp Marketing client
 mailchimp_marketing = mailchimp_marketing_client()
-
 list_id = os.environ.get('MC_AUDIENCE_ID')
 
+# Enter the email to be checked
 member_email = "admin@lintermediaire.ma"
 member_email_hash = hashlib.md5(member_email.encode('utf-8').lower()).hexdigest()
 
+# Get the response from the API call 
 try:
   response = mailchimp_marketing.lists.get_list_member(list_id, member_email_hash)
   print("Response: {}".format(response['status']))
