@@ -18,6 +18,7 @@ def run():
   try:
     # Retrieve the API key from the environment variable
     api_key = os.environ.get('MAILCHIMP_API_KEY')
+    print(api_key)
 
     # Check if the environment variable is set
     if not api_key:
