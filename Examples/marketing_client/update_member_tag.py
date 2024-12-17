@@ -1,6 +1,6 @@
 import hashlib
 from mailchimp_marketing.api_client import ApiClientError
-from Marketing_email_client import mailchimp_marketing_client
+from marketing_client import mailchimp_marketing_client
 import os
 from dotenv import load_dotenv
 

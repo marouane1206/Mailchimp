@@ -1,5 +1,5 @@
 import json
-from Marketing_email_client import mailchimp_marketing_client
+from marketing_client import mailchimp_marketing_client
 from mailchimp_marketing.api_client import ApiClientError
 import os
 from dotenv import load_dotenv
